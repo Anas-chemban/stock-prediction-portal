@@ -17,6 +17,8 @@ const Register = () => {
     const userData = {
       username,email,password
     }
+    console.log(userData)
+
     try{
       const responser = await axios.post('http://127.0.0.1:8000/api/v1/register/', userData)
       console.log("responser.data ==>",responser.data)
